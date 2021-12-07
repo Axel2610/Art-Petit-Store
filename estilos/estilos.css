@@ -332,3 +332,31 @@ opacity: 0;
     font-weight: 700;
     color: var(--colorSecundario);
 }
+
+
+/* FLOATWPP */
+
+.floatWpp{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #00bb2d;
+    color: #ffffff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.floatWpp:hover{
+    text-decoration: none;
+    color: #00bb2d;
+    background-color: #ffffff;
+}
+
+.iconWpp{
+    margin-top: 16px;
+}
