@@ -6,8 +6,7 @@ const iconoFormEmail = document.querySelector("#emailUser");
 const estadoFormulario = document.querySelector(".formularioEstado");
 const estadoFormularioEmail = document.querySelector(".formularioEstadoEmail");
 const exprReguEMail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-
-
+const btnSubmit = document.querySelector('.botonSubmit')
 
 const validarFormulario = (e) => {
   switch (e.target.name) {
@@ -17,7 +16,7 @@ const validarFormulario = (e) => {
 
       break;
     case "email":
-      // si es un email no pasa el test entonces marcalo como no valido , caso contrario marcalo como valido 
+      // si el  email no pasa el test entonces marcalo como no valido , caso contrario marcalo como valido 
       validarDatosEmail(e)
       break;
   }
@@ -29,15 +28,18 @@ inputsFormulario.forEach((input) => {
 
 
 const validarDatosNombre = (e) => {
-  if (e.target.value.length < 3 || e.target.value.length > 25) {
+  if (e.target.value.length <=3 || e.target.value.length > 25) {
+    btnformulario(e)
     e.target.classList.add("errorDatos");
     e.target.classList.remove("datosCorrectos");
     estadoFormulario.classList.add('formularioEstadoActivo')
     iconoForm.classList.remove('formularioEstadoCorrecto')
     iconoForm.classList.add('formularioEstadoIncorrecto')
     document.querySelector('#iconoError ').classList.add('fa-times')
+    
   } else {
     // caso contrario elimina la clase errorDatos y setea clase datosCorrectos
+    btnformulario(e)
     e.target.classList.remove("errorDatos");
     e.target.classList.add("datosCorrectos");
     estadoFormulario.classList.add('formularioEstadoActivo')
@@ -49,6 +51,7 @@ const validarDatosNombre = (e) => {
 }
 const validarDatosEmail = (e) => {
   if (exprReguEMail.test(e.target.value) === false) {
+    btnformulario(e)
     e.target.classList.add("errorDatos");
     e.target.classList.remove("datosCorrectos");
     estadoFormularioEmail.classList.add('formularioEstadoActivo')
@@ -57,6 +60,7 @@ const validarDatosEmail = (e) => {
     document.querySelector('#iconoErrorEmail').classList.add('fa-times')
     document.querySelector('#iconoErrorEmail').classList.remove('fa-check')
   } else {
+    btnformulario(e)
     // caso contrario elimina la clase errorDatos y setea clase datosCorrectos
     e.target.classList.remove("errorDatos");
     e.target.classList.add("datosCorrectos");
@@ -67,6 +71,17 @@ const validarDatosEmail = (e) => {
     document.querySelector('#iconoErrorEmail ').classList.add('fa-check')
   }
 
+}
+
+const btnformulario = e=>{
+if(e.target.classList[2]==='errorDatos'){
+  btnSubmit.classList.add('--incompleto')
+  document.querySelector(".botonSubmit").disabled = true;
+}else{
+  btnSubmit.classList.remove('--incompleto')
+  document.querySelector(".botonSubmit").disabled = false;
+  
+}
 }
 
 
