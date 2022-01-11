@@ -14,27 +14,24 @@
 }
 
 body {
+
     background-color: #E5E5E5;
     width: 100%;
 }
 @media (max-width:768px) {
-    .contenidoTotal{
-        display: flex;
-        height: 100vh;
-        flex-direction: column;
-        
-    }
+ 
+  
     .contenido{
         margin: 0;
         padding: 0;
+    
     }
-    .contenedor{
-        display: flex;
-    }
+   
     .contenedor-main{
-       flex: 1 1 0%;
-      
+        flex-direction: column;
+        flex: 1 1 0%;
     }
+   
     
 }
 
@@ -97,9 +94,7 @@ body {
 @media (max-width:975px) {
 
     .contenido {
-        position: relative;
-      
-        
+        position: relative;   
     }
 
     .contenedorNavs {
@@ -218,7 +213,8 @@ body {
 }
 
 @media (max-width:768px) {
-    .carousel-caption h5 {
+  
+    .carousel-caption h5  {
         font-family: 'Mina';
         text-transform: uppercase;
         color: rgb(0, 0, 0);
@@ -226,30 +222,40 @@ body {
         font-size: 1rem;
         font-weight: bold;
         display: block;
+        bottom: 6rem;
     }
-
-    .carousel-caption span {
+    .titulosCarrousel span {
         color: #000;
         font-family: 'Mina';
         font-size: 1.3rem;
         right: 35px;
         text-transform: uppercase;
-
+        bottom: 3rem;
 
 
     }
-
-    .titulosCarrousel__terImg {
-        bottom: 60px;
-        right: 35px;
-        font-size: .8rem !important;
+    .carousel-item img {
+    padding: 1rem;
+    height: 15rem;
     }
+
+    .titulosCarrousel__terImg h5{
+        color:fuchsia !important;
+    }
+    .carousel-caption span {
+        bottom: 2.5rem !important;
+        right: 20px !important;
+        font-size: 1.3rem !important;
+    }
+  
 }
 @media (max-width:768px) {
+    .contendor{
+        display: flex;
+        flex-direction: column;
+    }
     .contenedor__Main{
-   display: flex;
-   flex-direction: column;
-   flex: 1 1 0%;
+     
     }
     
 }
@@ -685,7 +691,7 @@ body {
 @media (min-width:300px) {
 
     .contenedorInfo {
-
+       
         overflow: hidden;
         border-top: 1px solid rgba(128, 128, 128, 0.616);
 
@@ -840,11 +846,12 @@ body {
 @media (max-width:975px) {
 
     /* ajustar la pantalla  */
-    body {
-        min-height: 100%;
-        min-width: 100%;
-
-    }
+    html, body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+      }
 
     .tituloArtPetit {
         text-align: center;
