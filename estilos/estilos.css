@@ -25,9 +25,11 @@ body {
         
     }
     .contenido{
-        height: 100vh;
         margin: 0;
         padding: 0;
+    }
+    .contenedor{
+        display: flex;
     }
     .contenedor-main{
        flex: 1 1 0%;
@@ -102,7 +104,7 @@ body {
 
     .contenedorNavs {
         position: absolute;
-        bottom: 330px;
+         top: 52px;
         width: 12rem;
         background-color: #FDB022;
         left: -12rem;
@@ -673,7 +675,7 @@ body {
 
     .textoQuienesSomos {
         font-family: 'Mina';
-        font-size: 1rem;
+        font-size: 15.5px;
         margin: 1rem;
         text-align: start;
     }
@@ -695,7 +697,8 @@ body {
         display: flex;
         justify-content: space-evenly;
         gap: 25px;
-        padding: 1rem;
+        padding: .5rem;
+        
 
     }
 
