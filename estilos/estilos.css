@@ -236,29 +236,22 @@ body {
     }
     .carousel-item img {
     padding: 1rem;
-    height: 15rem;
+    height: 20rem;
     }
 
-    .titulosCarrousel__terImg h5{
-        color:fuchsia !important;
+    .titulosCarrousel__terImg {
+        bottom: 10rem !important;
+        right: 1.2rem !important;
     }
+   
     .carousel-caption span {
-        bottom: 2.5rem !important;
+        bottom: 7rem !important;
         right: 20px !important;
         font-size: 1.3rem !important;
     }
   
 }
-@media (max-width:768px) {
-    .contendor{
-        display: flex;
-        flex-direction: column;
-    }
-    .contenedor__Main{
-     
-    }
-    
-}
+
 
 /* FIN contenido carrousel */
 .contenedorInfo {
@@ -691,7 +684,7 @@ body {
 @media (min-width:300px) {
 
     .contenedorInfo {
-       
+        
         overflow: hidden;
         border-top: 1px solid rgba(128, 128, 128, 0.616);
 
@@ -699,12 +692,13 @@ body {
     }
 
     .Info {
-        position: relative;
+
         display: flex;
         justify-content: space-evenly;
         gap: 25px;
-        padding: .5rem;
-        
+        position: relative;
+        top: 12px;
+        padding: 1rem;
 
     }
 
@@ -716,7 +710,7 @@ body {
         text-align: center;
         margin-bottom: 20px;
         margin-right: 4px;
-
+        top: 10px;
 
     }
 
@@ -733,16 +727,15 @@ body {
         font-weight: 700;
         color: #5C5959;
         text-decoration: none;
-        position: relative;
-
+       position: relative;
 
     }
+    
 
     .preguntasFrecuentes__Contenido {
         display: flex;
         justify-content: space-between;
         gap: 2rem;
-        top: 25px;
         font-family: var(--fuentePrincipal);
         font-weight: 700;
         font-size: 10px;
@@ -752,11 +745,14 @@ body {
 
     }
 
-    .textoFAQS {
+    .textoFAQS p {
         font-size: 10px;
         font-family: 'Mina';
         text-align: center;
         padding: 5px;
+        position: relative;
+        top: 25px;
+        margin: 0;
     }
 
 
@@ -849,7 +845,7 @@ body {
     html, body{
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 100%;
         justify-content: space-between;
       }
 
@@ -857,6 +853,9 @@ body {
         text-align: center;
         font-size: 1.5rem;
         font-weight: 900;
+        position: relative;
+        top: -20px;
+        margin: 0;
     }
 
     .contenedorLucesExterior {
