@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,176 +27,299 @@
 </head>
 
 <body>
+
+
   <header>
-
-
-    <div class="headerTop ">
-      <i id="sidebar" class="fas fa-bars sidebar"></i>
+    <!-- NAVS -->
+    <div class="headerTop">
+      <div class="sidebarContenido mobile">
+        <i id="sidebar" class="fas fa-bars sidebar "></i>
+      </div>
       <div class="textHeader">
         <a href="nuestroBlog.html" class="a-Header">Nuestro Blog</a>
         <a href="contactanos.html" class="a-Header ">¡Contactanos!</a>
       </div>
-
     </div>
-
   </header>
+  <nav>
+    <div class="col-xs-12 contenedorNavs mobile">
+      <ul>
+        <li class="nav-item col-md-2">
+          <a class="nav-link a-nav" href="comprarArte.html">Comprar Arte</a>
+        </li>
+        <li class="nav-item dropdown col-md-2">
+          <a class="nav-link a-nav dropdown-toggle" data-bs-toggle="dropdown" href="" role="button"
+            aria-expanded="false">Luminarias</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="lucesInterior.html">De Interior</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="lucesExterior.html">De Exterior</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="lucesOfertas.html">Ofertas</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item col-md-2">
+          <a class="nav-link a-nav" href="trabajosPersonalizados.html">Trabajos Personalizados</a>
+        </li>
+        <li class="nav-item col-md-2">
+          <a class="nav-link a-nav" href="ideas.html">Ideas</a>
+        </li>
+        <li class="nav-item col-md-2">
+          <a class="nav-link a-nav" href="quienesSomos.html">Quienes Somos</a>
+        </li>
+      </ul>
+    </div>
+    <!-- FIN NAVS -->
+  </nav>
 
+  <section class="contenido">
+    <main>
+      <div class="contenedor-main">
+        <h1 class="tituloArtPetit">
+          <div>
+            <a href="index.html" class="tituloArtPetit"> ART PETIT STORE</a>
+          </div>
 
-    <!-- NAVS -->
-
-    <section class="contenido">
-
-      <div class="col-xs-12 contenedorNavs">
-        <ul>
-          <li class="nav-item col-md-2">
-            <a class="nav-link a-nav" href="comprarArte.html">Comprar Arte</a>
-          </li>
-          <li class="nav-item dropdown col-md-2">
-            <a class="nav-link a-nav dropdown-toggle" data-bs-toggle="dropdown" href="" role="button"
-              aria-expanded="false">Luminarias</a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="lucesInterior.html">De Interior</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="lucesExterior.html">De Exterior</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="lucesOfertas.html">Ofertas</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item col-md-2">
-            <a class="nav-link a-nav" href="trabajosPersonalizados.html">Trabajos Personalizados</a>
-          </li>
-          <li class="nav-item col-md-2">
-            <a class="nav-link a-nav" href="ideas.html">Ideas</a>
-          </li>
-          <li class="nav-item col-md-2">
-            <a class="nav-link a-nav" href="quienesSomos.html">Quienes Somos</a>
-          </li>
-        </ul>
-      </div>
-      <!-- FIN NAVS -->
-
-
- 
-        <main>
-          <!-- <h1 class="tituloArtPetit">
-            <div>
-              <a href="index.html" class="tituloArtPetit"> ART PETIT STORE</a>
-            </div>
-
-          </h1> -->
+        </h1>
         <div class="comoComprarTitulo">
           <h3 class="text-center p-3 tituloComoComprar">Como Comprar</h3>
         </div>
-       
 
-          <div class="row row-cols-1 row-cols-sm-3 g-3 p-5">
-            <div class="col">
-              <div class="card h-100 border-0">
-                <img src="img/comoComprarArte.png" class="card-img-top" alt="..." />
-                <div class="card-body cartasComoComprar">
-                  <h5 class="card-title text-center">PASO 1</h5>
-                  <p class="card-text">
-                    Podes elegir un cuadro del store o un diseño personalizado. En
-                    el caso que sea la segunda opción deberás indicar el tamaño
-                    del cuadro y el motivo, dibujo o diseño deseado.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 border-0">
-                <img src="img/cajaComoComprar.png" class="card-img-top" alt="..." />
-                <div class="card-body cartasComoComprar">
-                  <h5 class="card-title text-center">PASO 2</h5>
-                  <p class="card-text">
-                    Escribe un correo a @ con toda la información correspondiente
-                    respecto a su cuadro y espere nuestra respuesta para proceder
-                    con el pago
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 border-0">
-                <img src="img/entregaComoComprar.png" class="card-img-top" alt="..." />
-                <div class="card-body cartasComoComprar">
-                  <h5 class="card-title text-center">PASO 3</h5>
-                  <p class="card-text">
-                    Una vez realizado el pago recibirás la confirmación y se
-                    iniciará el proceso de creación en el caso que así se nececite
-                    (obras personalizadas). Posteriormente recibirás tu pedido en
-                    el plazo que te señalaremos dependiendo la obra.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 border-0">
-                <img src="img/lucesComoComprar.png" class="card-img-top" alt="..." />
-                <div class="card-body cartasComoComprar">
-                  <h5 class="card-title text-center">PASO 1</h5>
-                  <p class="card-text">
-                    Elegir las luminarias que te interecen de nuestro store con su
-                    color correspondiente e indicando la cantidad deseada
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 border-0">
-                <img src="img/cajaComoComprar.png" class="card-img-top" alt="..." />
-                <div class="card-body cartasComoComprar">
-                  <h5 class="card-title text-center">PASO 2</h5>
-                  <p class="card-text">
-                    Escribe un correo a @ con toda la información correspondiente
-                    respecto a las luminarias y espere nuestra respuesta para
-                    proceder con el pago.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 border-0">
-                <img src="img/entregaComoComprar.png" class="card-img-top" alt="..." />
-                <div class="card-body cartasComoComprar">
-                  <h5 class="card-title text-center">PASO 3</h5>
-                  <p class="card-text">
-                    Una vez realizado el pago recibirás la confirmación y se
-                    iniciará el proceso de embalado. Posteriormente recibirás tu
-                    pedido en el plazo que te señalaremos a través de nuestro
-                    mail.
-                  </p>
-                </div>
+
+        <div class=" comoComprar__Desktop" >
+          <div class="col">
+            <div class="card h-100 border-0">
+              <img src="img/comoComprarArte.png" class="card-img-top" alt="..." />
+              <div class="card-body cartasComoComprar">
+                <h5 class="card-title text-center">PASO 1</h5>
+                <p class="card-text">
+                  Podes elegir un cuadro del store o un diseño personalizado. En
+                  el caso que sea la segunda opción deberás indicar el tamaño
+                  del cuadro y el motivo, dibujo o diseño deseado.
+                </p>
               </div>
             </div>
           </div>
+          <div class="col">
+            <div class="card h-100 border-0">
+              <img src="img/cajaComoComprar.png" class="card-img-top" alt="..." />
+              <div class="card-body cartasComoComprar">
+                <h5 class="card-title text-center">PASO 2</h5>
+                <p class="card-text">
+                  Escribe un correo a @ con toda la información correspondiente
+                  respecto a su cuadro y espere nuestra respuesta para proceder
+                  con el pago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0">
+              <img src="img/entregaComoComprar.png" class="card-img-top" alt="..." />
+              <div class="card-body cartasComoComprar">
+                <h5 class="card-title text-center">PASO 3</h5>
+                <p class="card-text">
+                  Una vez realizado el pago recibirás la confirmación y se
+                  iniciará el proceso de creación en el caso que así se nececite
+                  (obras personalizadas). Posteriormente recibirás tu pedido en
+                  el plazo que te señalaremos dependiendo la obra.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0">
+              <img src="img/lucesComoComprar.png" class="card-img-top" alt="..." />
+              <div class="card-body cartasComoComprar">
+                <h5 class="card-title text-center">PASO 1</h5>
+                <p class="card-text">
+                  Elegir las luminarias que te interecen de nuestro store con su
+                  color correspondiente e indicando la cantidad deseada
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0">
+              <img src="img/cajaComoComprar.png" class="card-img-top" alt="..." />
+              <div class="card-body cartasComoComprar">
+                <h5 class="card-title text-center">PASO 2</h5>
+                <p class="card-text">
+                  Escribe un correo a @ con toda la información correspondiente
+                  respecto a las luminarias y espere nuestra respuesta para
+                  proceder con el pago.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0">
+              <img src="img/entregaComoComprar.png" class="card-img-top" alt="..." />
+              <div class="card-body cartasComoComprar">
+                <h5 class="card-title text-center">PASO 3</h5>
+                <p class="card-text">
+                  Una vez realizado el pago recibirás la confirmación y se
+                  iniciará el proceso de embalado. Posteriormente recibirás tu
+                  pedido en el plazo que te señalaremos a través de nuestro
+                  mail.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-     
-      </main>
+      <!-- diseño mobile de como comprar  -->
+      <div class="comoComprar__Movile">
+        <div class="col">
+          <div class="card h-100 border-0">
+            <img src="img/comoComprarArte.png" class="card-img-top" alt="..." />
+            <div class="card-body cartasComoComprar">
+              <h5 class="card-title text-center">PASO 1</h5>
+              <p class="card-text">
+                Podes elegir un cuadro del store o un diseño personalizado. En
+                el caso que sea la segunda opción deberás indicar el tamaño
+                del cuadro y el motivo, dibujo o diseño deseado.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0">
+            <img src="img/cajaComoComprar.png" class="card-img-top" alt="..." />
+            <div class="card-body cartasComoComprar">
+              <h5 class="card-title text-center">PASO 2</h5>
+              <p class="card-text">
+                Escribe un correo a @ con toda la información correspondiente
+                respecto a su cuadro y espere nuestra respuesta para proceder
+                con el pago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0">
+            <img src="img/entregaComoComprar.png" class="card-img-top" alt="..." />
+            <div class="card-body cartasComoComprar">
+              <h5 class="card-title text-center">PASO 3</h5>
+              <p class="card-text">
+                Una vez realizado el pago recibirás la confirmación y se
+                iniciará el proceso de creación en el caso que así se nececite
+                (obras personalizadas). Posteriormente recibirás tu pedido en
+                el plazo que te señalaremos dependiendo la obra.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0">
+            <img src="img/lucesComoComprar.png" class="card-img-top" alt="..." />
+            <div class="card-body cartasComoComprar">
+              <h5 class="card-title text-center">PASO 1</h5>
+              <p class="card-text">
+                Elegir las luminarias que te interecen de nuestro store con su
+                color correspondiente e indicando la cantidad deseada
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0">
+            <img src="img/cajaComoComprar.png" class="card-img-top" alt="..." />
+            <div class="card-body cartasComoComprar">
+              <h5 class="card-title text-center">PASO 2</h5>
+              <p class="card-text">
+                Escribe un correo a @ con toda la información correspondiente
+                respecto a las luminarias y espere nuestra respuesta para
+                proceder con el pago.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0">
+            <img src="img/entregaComoComprar.png" class="card-img-top" alt="..." />
+            <div class="card-body cartasComoComprar">
+              <h5 class="card-title text-center">PASO 3</h5>
+              <p class="card-text">
+                Una vez realizado el pago recibirás la confirmación y se
+                iniciará el proceso de embalado. Posteriormente recibirás tu
+                pedido en el plazo que te señalaremos a través de nuestro
+                mail.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+      
+      <!-- Envio,Financiacion,Asesoramiento -->
+      <section>
+        <div class="contenedorInfo">
+          <div class="Info ">
+            <div class="textoInformacion">
+              <h5>ENVIOS A DOMICILIO
+                <img src="img/entrega.png" alt="entregaDomicilio" />
+              </h5>
+
+            </div>
+            <div class="textoInformacion">
+              <h5>FINANCIACIÓN
+                <img src="img/tarjetas.png" alt="entregaDomicilio" />
+              </h5>
+
+            </div>
+            <div class="textoInformacion">
+              <h5>ASESORAMIENTO
+                <img src="img/dialogo.png" alt="entregaDomicilio" />
+              </h5>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- FIN de Envio,Financiacion,Asesoramiento   -->
+        <div class="preguntasFrecuentes">
+          <div class="preguntasFrecuentes__Contenido">
+            <a class=" textoFAQS" href="preguntasFrecuentes.html">
+              <div class="textoFAQS__contenido">
+                <p>PREGUNTAS FRECUENTES</p>
+              </div>
+            </a>
+            <a class=" textoFAQS" href="comoComprar.html">
+              <div class="textoFAQS__contenido">
+                <p>COMO COMPRAR</p>
+              </div>
+            </a>
+            <a class=" textoFAQS" href="terminosycondiciones.html">
+              <div class="textoFAQS__contenido">
+                <p>TERMINOS Y CONDICIONES</p>
+              </div>
+            </a>
+          </div>
+
+
+        </div>
+        </div>
+      </section>
+
 
   </section>
-
-
-
   <footer class="footer">
     <div class="contenidoFooter">
       <div class="contenidoFooterRedes">
         <div class="contenedorLogoRedes__texto">
           <h5 class="textoRedes">CONTACTANOS</h5>
-        </div>
-        <div class="contenedorLogoRedes__iconos">
           <a href="#" class="icon-button pinterest"><i class="fab fa-pinterest"></i><span></span></a>
+          <a href="#" class="icon-button whatsapp"><i class="fab fa-whatsapp"></i><span></span></a>
           <a href="#" class="icon-button instagram"><i class="fab fa-instagram"></i><span></span></a>
-          <a href="https://api.whatsapp.com/send?phone=5491150622993&text=Hola%21%20Pedido" class="icon-button whatsapp"><i class="fab fa-whatsapp"></i><span></span></a>
         </div>
       </div>
-  
+
       <div class="contenedorUbicacion ">
         <h4 class="textoUbicacion">
           <img src="img/email.png" alt="email" /> artpetitstore@
@@ -205,8 +329,9 @@
         </h4>
       </div>
     </div>
-  
+
   </footer>
+
 </body>
 <script src="js/sidebar.js"></script>
 
