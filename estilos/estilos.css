@@ -104,7 +104,7 @@ body {
         background-color: #FDB022;
         left: -12rem;
         transition: all 250ms linear;
-        z-index: 3;
+        z-index: 100;
     }
 
     .contenedorNavs.active {
@@ -284,11 +284,12 @@ body {
 @media(max-width:768px) {
 
     .contenidoFooterRedes,
-    .contenedorLogoRedes__iconos {
+    .contenedorLogoRedes__iconos  {
         display: flex;
         justify-content: space-evenly;
-        padding: 1.8rem;
+      padding: 2rem;
     }
+   
 
     .contenidoFooterRedes h5 {
         font-family: 'Mina';
@@ -299,8 +300,8 @@ body {
         margin-left: 2rem;
     }
 
-    .contenedorLogoRedes__iconos a {
-        font-size: 1.2rem;
+    .contenedorLogoRedes__iconos i{
+        font-size: 1.6rem;
         background-color: var(--colorPrincipal);
     }
 
@@ -445,7 +446,6 @@ body {
     }
 
 }
-
 
 
 /* PAGINA TRABAJOS PERSONALIZADOS */
@@ -788,9 +788,10 @@ body {
 
     /* ajustar la pantalla  */
     html, body {
-        min-height: 100%;
-        min-width: 100%;
-        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
     }
 
     .tituloArtPetit {
@@ -852,7 +853,7 @@ body {
         text-align: center;
         font-size: 1.5rem;
         font-weight: 900;
-        margin: 0;
+        margin: 1em;
     }
 
     .contenedorLucesExterior {
@@ -951,8 +952,8 @@ body {
     height: 11rem;
     }
     .card-body{
-        background-color: #C11574;
-        color: #FFFFFF;
+        background-color: #fff;
+        color: #000;
     
     }
     .ComoComprar__titulo-h5{
@@ -1105,3 +1106,34 @@ body {
     
 }
 
+/* pagina contactanos */
+@media (max-width:965px) {
+    .contenedorContactanos{
+      
+        text-align: center;
+        font-family: 'Mina';
+        background-color: #FEC84B;
+        margin-top: 8rem;
+        height: 80vh;
+    }
+    .contenedorLogoRedes__iconos__Contactanos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+     
+    }
+    .contenedorLogoRedes__iconos__Contactanos i{
+        font-size: 2.5rem;
+
+    }
+    .contenedorUbicacion__Contactanos{
+        display: flex;
+        justify-content: space-around;
+    }
+    .contenedorUbicacion__Contactanos img{
+        width: 2rem;
+    }
+  
+}
