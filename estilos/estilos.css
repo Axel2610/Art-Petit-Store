@@ -14,20 +14,24 @@
 }
 
 body {
+
     background-color: #E5E5E5;
     width: 100%;
 }
 @media (max-width:768px) {
-    .contenidoTotal{
-        display: flex;
-        height: 100vh;
-        flex-direction: column;
-        
+ 
+  
+    .contenido{
+        margin: 0;
+        padding: 0;
+    
     }
+   
     .contenedor-main{
-       flex: 1 1 0%;
-      
+        flex-direction: column;
+        flex: 1 1 0%;
     }
+   
     
 }
 
@@ -38,9 +42,8 @@ body {
 }
 
 .textHeader {
-    
+    display: flex;
     justify-content: end;
-    margin-top: -1.5rem;
 
 }
 @media(max-width:975px){
@@ -90,21 +93,17 @@ body {
 @media (max-width:975px) {
 
     .contenido {
-        position: relative;
-        padding: 0 auto;
-        margin: none;
-        
+        position: relative;   
     }
 
     .contenedorNavs {
         position: absolute;
-        top: -40px;
-        margin: none;
+         top: 52px;
         width: 12rem;
         background-color: #FDB022;
         left: -12rem;
         transition: all 250ms linear;
-        z-index: 3;
+        z-index: 100;
     }
 
     .contenedorNavs.active {
@@ -153,6 +152,8 @@ body {
     font-size: 1.2rem;
     text-decoration: none;
     font-weight: bold;
+    font-family: 'Mina';
+    gap: 1.5rem;
 }
 
 .navPc:hover {
@@ -211,7 +212,8 @@ body {
 }
 
 @media (max-width:768px) {
-    .carousel-caption h5 {
+  
+    .carousel-caption h5  {
         font-family: 'Mina';
         text-transform: uppercase;
         color: rgb(0, 0, 0);
@@ -219,33 +221,36 @@ body {
         font-size: 1rem;
         font-weight: bold;
         display: block;
+        bottom: 6rem;
     }
-
-    .carousel-caption span {
+    .titulosCarrousel span {
         color: #000;
         font-family: 'Mina';
         font-size: 1.3rem;
         right: 35px;
         text-transform: uppercase;
+        bottom: 3rem;
 
 
-
+    }
+    .carousel-item img {
+    padding: 1rem;
+    height: 20rem;
     }
 
     .titulosCarrousel__terImg {
-        bottom: 60px;
-        right: 35px;
-        font-size: .8rem !important;
+        bottom: 10rem !important;
+        right: 1.2rem !important;
     }
-}
-@media (max-width:768px) {
-    .contenedor__Main{
-   display: flex;
-   flex-direction: column;
-   flex: 1 1 0%;
+   
+    .carousel-caption span {
+        bottom: 6rem !important;
+        right: 20px !important;
+        font-size: 1.3rem !important;
     }
-    
+  
 }
+
 
 /* FIN contenido carrousel */
 .contenedorInfo {
@@ -278,11 +283,12 @@ body {
 @media(max-width:768px) {
 
     .contenidoFooterRedes,
-    .contenedorLogoRedes__iconos {
+    .contenedorLogoRedes__iconos  {
         display: flex;
         justify-content: space-evenly;
-        padding: 1.8rem;
+      padding: 2rem;
     }
+   
 
     .contenidoFooterRedes h5 {
         font-family: 'Mina';
@@ -293,8 +299,8 @@ body {
         margin-left: 2rem;
     }
 
-    .contenedorLogoRedes__iconos a {
-        font-size: 1.2rem;
+    .contenedorLogoRedes__iconos i{
+        font-size: 1.6rem;
         background-color: var(--colorPrincipal);
     }
 
@@ -371,28 +377,6 @@ body {
     margin-top: 150px;
     margin-right: 9rem;
 }
-@media (max-width:768px) {
-    .producDatos {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    .producImg {
-        margin:3rem;
-        padding: 0;
-      
-    }
-    
-    .producDescrip {
-        margin-top: 5rem;
-        font-family: 'Mina', sans-serif;
-        text-transform: uppercase;
-        text-align: center;
-        margin-top: 150px;
-        margin-right: 9rem;
-    }
-    
-}
 .btnComprar {
     width: 10rem;
     height: 3.5rem;
@@ -415,7 +399,8 @@ body {
 @media (max-width:975px) {
 
 
-
+/* media query para la version mobile de comprar luces o dibujos */
+@media (max-width:768px) {
     .tituloArtPetit {
         text-align: center;
         font-size: 1.5rem;
@@ -427,7 +412,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
         margin-top: -2rem;
-        padding: 2rem;
+       padding: 15px;
 
     }
 
@@ -460,7 +445,6 @@ body {
     }
 
 }
-
 
 
 /* PAGINA TRABAJOS PERSONALIZADOS */
@@ -689,7 +673,7 @@ body {
 
     .textoQuienesSomos {
         font-family: 'Mina';
-        font-size: 1rem;
+        font-size: 15.5px;
         margin: 1rem;
         text-align: start;
     }
@@ -699,7 +683,7 @@ body {
 @media (min-width:300px) {
 
     .contenedorInfo {
-
+        
         overflow: hidden;
         border-top: 1px solid rgba(128, 128, 128, 0.616);
 
@@ -707,10 +691,12 @@ body {
     }
 
     .Info {
-        position: relative;
+
         display: flex;
         justify-content: space-evenly;
         gap: 25px;
+        position: relative;
+        top: 12px;
         padding: 1rem;
 
     }
@@ -723,7 +709,7 @@ body {
         text-align: center;
         margin-bottom: 20px;
         margin-right: 4px;
-
+        top: 10px;
 
     }
 
@@ -740,30 +726,31 @@ body {
         font-weight: 700;
         color: #5C5959;
         text-decoration: none;
-        position: relative;
-
+       
 
     }
+    
 
     .preguntasFrecuentes__Contenido {
         display: flex;
         justify-content: space-between;
-        gap: 2rem;
-        top: 25px;
         font-family: var(--fuentePrincipal);
         font-weight: 700;
-        font-size: 10px;
         color: #5C5959;
         text-decoration: none;
         border-top: 1px solid rgba(128, 128, 128, 0.616);
-
+       
     }
 
-    .textoFAQS {
-        font-size: 10px;
+    .textoFAQS__contenido{
+        position: relative;
+        top: 1rem;
+        font-size: .8rem;
         font-family: 'Mina';
         text-align: center;
-        padding: 5px;
+        margin: .5rem;
+        height: 100%;
+
     }
 
 
@@ -800,9 +787,10 @@ body {
 
     /* ajustar la pantalla  */
     html, body {
-        min-height: 100%;
-        min-width: 100%;
-        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
     }
 
     .tituloArtPetit {
@@ -853,16 +841,18 @@ body {
 @media (max-width:975px) {
 
     /* ajustar la pantalla  */
-    body {
-        min-height: 100%;
-        min-width: 100%;
-
-    }
+    html, body{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+      }
 
     .tituloArtPetit {
         text-align: center;
         font-size: 1.5rem;
         font-weight: 900;
+        margin: 1em;
     }
 
     .contenedorLucesExterior {
@@ -922,6 +912,80 @@ body {
 /* PAGINA ¿COMO COMPRAR? */
 
 
+/* dependiendo la resolucion de la pantalla muestro un diseño u otro  */
+@media (max-width:768px) {
+    .comoComprar__Movile{
+        display: block;
+        background: #F6D6E8;
+     padding-bottom:10px ;
+ 
+    } 
+    
+    .comoComprarTitulo__Movile{
+        text-align: start !important;
+        font-family: 'Mina';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 16px;
+        color: #3C3B3B !important;
+        text-transform: uppercase;
+        
+
+    }
+    .comoComprar__Contenido__Principal{
+        background: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin: 20px;
+        margin-bottom: 20px;
+    }
+    .comoComprar__img-1{
+        display: flex;
+    }
+    .comoComprar__img-2 img ,
+    .comoComprar__img-3 img{
+    width: 100%;
+    height: 11rem;
+    }
+    .card-body{
+        background-color: #fff;
+        color: #000;
+    
+    }
+    .ComoComprar__titulo-h5{
+        font-family: 'Mina';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 16px;
+        text-align: center;
+        margin: 10px;
+    }
+    .comoComprar__texto-p{
+        font-family: 'Mina';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 16px;
+        color: #FFFFFF;
+        margin: 20px;
+        
+    }
+    
+}
+@media (min-width:768px) {
+    .comoComprar__Movile{
+        display: none;
+    }
+}
+@media (min-width:768px) {
+    .comoComprar__Desktop{
+        display: block ; 
+    }
+    
 .contenedorComoComprar {
     background: #C1157433;
     height: 100%;
@@ -939,7 +1003,12 @@ body {
     text-transform: uppercase;
     color: var(--colorSecundario);
 }
-
+}
+@media (max-width:768px) {
+    .comoComprar__Desktop{
+        display: none ; 
+    }
+}
 
 
 /* PAGINA PREGUNTAS FRECUENTES */
@@ -993,14 +1062,32 @@ body {
 }
 
 
-
-/* PAGINA TERMINOS Y CONDICIONES  */
-
 .tituloTerminosyCondiciones {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
     color: var(--colorSecundario);
 }
+/* PAGINA TERMINOS Y CONDICIONES  */
+@media (max-width:975px) {
+    .tituloTerminosyCondiciones{
+        font-family: 'Mina';
+        font-weight: 700;
+        font-style: normal;
+        font-size: 14px;
+        color: var(--colorTerciario);
+    }
+    .terminosYCondiones__Texto{
+        font-family: 'Mina';
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12.7px;
+        text-align: start;
+        margin: 15px;   
+    }
+    
+}
+
+
 
 /* PAGINA DE NUESTRO BLOG */
 .subtituloBlog {
@@ -1014,4 +1101,38 @@ body {
     font-weight: bold;
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.253) 0px 4px 4px;
+}
+    
+}
+
+/* pagina contactanos */
+@media (max-width:965px) {
+    .contenedorContactanos{
+      
+        text-align: center;
+        font-family: 'Mina';
+        background-color: #FEC84B;
+        margin-top: 8rem;
+        height: 80vh;
+    }
+    .contenedorLogoRedes__iconos__Contactanos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+     
+    }
+    .contenedorLogoRedes__iconos__Contactanos i{
+        font-size: 2.5rem;
+
+    }
+    .contenedorUbicacion__Contactanos{
+        display: flex;
+        justify-content: space-around;
+    }
+    .contenedorUbicacion__Contactanos img{
+        width: 2rem;
+    }
+  
 }
