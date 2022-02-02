@@ -39,8 +39,10 @@ function comprarPintura() {
     const btnComprar = document.querySelector(".btnComprar");
     btnComprar.addEventListener('click', () => {
         const producto =  JSON.parse(sessionStorage.getItem("cuadro"))
-        console.log(producto.id);
-        location.href = `https://api.whatsapp.com/send?phone=5491150622993&text=Hola%21%20buenos dias , te queria hacer una consulta sobre las pinturas con el id =  ${producto.id}` 
+        location.href = `https://api.whatsapp.com/send?phone=5491150622993&text=Hola%21%20buenos dias , te queria hacer una consulta sobre las pintura =  ${producto.descripcion}` 
+    
     })
+  
 }
+
 comprarPintura()
