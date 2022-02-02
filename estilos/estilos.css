@@ -224,6 +224,7 @@ body {
 @media (max-width:768px) {
   
     .carousel-caption h5  {
+        position: relative;
         font-family: 'Mina';
         text-transform: uppercase;
         color: rgb(0, 0, 0);
@@ -233,16 +234,15 @@ body {
         display: block;
         bottom: 6rem;
     }
-    .titulosCarrousel span {
-        color: #000;
-        font-family: 'Mina';
+    /* .titulosCarrousel span {
+      
         font-size: 1.3rem;
         right: 35px;
         text-transform: uppercase;
         bottom: 3rem;
 
 
-    }
+    } */
     .carousel-item img {
     padding: 1rem;
     height: 20rem;
@@ -254,6 +254,10 @@ body {
     }
    
     .carousel-caption span {
+        position: relative;
+        color: #000;
+        font-family: 'Mina';
+        text-transform: uppercase;
         bottom: 6rem !important;
         right: 20px !important;
         font-size: 1.3rem !important;
