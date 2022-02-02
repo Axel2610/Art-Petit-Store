@@ -2,31 +2,31 @@
   {
     "id": 1,
     "img": "img/dibujo1.png",
-    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, impedit molestias exercitationem dolorum quam explicabo minima! Eveniet veniam quisquam quis quaerat unde sequi nobis ea dolore. Facilis, officiis? Repellat, numquam!"
+    "descripcion": "Tecnica : Mano alzada"
   },
   {
     "id": 2,
     "img": "img/dibujo2.png",
-    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, impedit molestias exercitationem dolorum quam explicabo minima! Eveniet veniam quisquam quis quaerat unde sequi nobis ea dolore. Facilis, officiis? Repellat, numquam!"
+    "descripcion": "Tecnica : acrilico sobre base de madera"
   },
   {
     "id": 3,
     "img": "img/dibujo3.png",
-    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, impedit molestias exercitationem dolorum quam explicabo minima! Eveniet veniam quisquam quis quaerat unde sequi nobis ea dolore. Facilis, officiis? Repellat, numquam!"
+    "descripcion": "Tecnica: pastel blanco sobre papel negro"
   },
   {
     "id": 4,
     "img": "img/dibujo4.png",
-    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, impedit molestias exercitationem dolorum quam explicabo minima! Eveniet veniam quisquam quis quaerat unde sequi nobis ea dolore. Facilis, officiis? Repellat, numquam!"
+    "descripcion": "Tecnica :lapiz, tinta china y acuarela.!"
   },
   {
     "id": 5,
     "img": "img/dibujo5.png",
-    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, impedit molestias exercitationem dolorum quam explicabo minima! Eveniet veniam quisquam quis quaerat unde sequi nobis ea dolore. Facilis, officiis? Repellat, numquam!"
+    "descripcion": "Tecnica :pastel de colores sobre papel negro."
   },
   {
     "id": 6,
     "img": "img/dibujo6.png",
-    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, impedit molestias exercitationem dolorum quam explicabo minima! Eveniet veniam quisquam quis quaerat unde sequi nobis ea dolore. Facilis, officiis? Repellat, numquam!"
+    "descripcion": "Tecnica:base en lapiz y acrilico."
   }
 ]
