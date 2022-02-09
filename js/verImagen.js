@@ -14,7 +14,6 @@ obtenerImg.forEach((imagen) => {
 async function mostrarImagen(id) {
     const datosLeidos = await traerDatos();
     let res = datosLeidos.filter(obj=> obj.id === id)
-    console.log(res.id);
     res.forEach((e) => {
         // una vez que filtro  guardo el resultado en el Session Storage
         sessionStorage.setItem('cuadro',JSON.stringify(e))
