@@ -36,32 +36,41 @@ body {
 }
 
 /* HEADER */
-.headerTop {
-    background-color: var(--colorPrincipal);
-    width: 100%;
+@media (min-width:768px) {
+    .headerTop {
+        background-color: var(--colorPrincipal);
+        width: 100%;
+    }
+    
+    .textHeader {
+        display: flex;
+        justify-content: end;
+    
+    }
 }
 
-.textHeader {
-    display: flex;
-    justify-content: end;
-
-}
 @media(max-width:975px){
+    .headerTop {
+        background-color: var(--colorPrincipal);
+        width: 100%;
+    }
     .textHeader {
        display: flex;
+       justify-content: flex-end;
        align-items: flex-end;
        margin-top: -1.5rem;
     }
 }
 .a-Header {
-    margin-right: 5vw;
+
     line-height: 52px;
     text-decoration: none;
     font-family: 'Pacifico', cursive;
     color: #ffffff;
     padding-left: 15px;
-    border-left: 3px solid white;
-    text-align: center;
+    border-left: 2px solid white;
+    margin: 5px;
+    
 }
 
 .a-Header:hover {
