@@ -1,96 +1,283 @@
+:root {
+    --colorPrincipal: #FEC84B;
+    --colorSecundario: #C11574;
+    --colorTerciario: #FDB022;
+    --fuentePrincipal: font-family: 'Mina', sans-serif;
+    --fuenteSecundaria: font-family: 'Pacifico', cursive;
 
-
-:root{
-    --colorPrincipal:#FEC84B ; 
-    --colorSecundario:#C11574;
-    --colorTerciario:#FDB022;
-    --fuentePrincipal :font-family: 'Mina', sans-serif; 
-    --fuenteSecundaria:font-family: 'Pacifico', cursive; 
-    
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
+
     background-color: #E5E5E5;
     width: 100%;
 }
-/* HEADER */
-.headerTop{
-    background-color:var(--colorPrincipal);
-    width: 100%;
-    height: 52px;
+@media (max-width:768px) {
+ 
+  
+    .contenido{
+        margin: 0;
+        padding: 0;
+    
+    }
+   
+    .contenedor-main{
+        flex-direction: column;
+        flex: 1 1 0%;
+    }
+   
+    
 }
 
-.a-Header{
+/* HEADER */
+.headerTop {
+    background-color: var(--colorPrincipal);
+    width: 100%;
+}
+
+.textHeader {
+    display: flex;
+    justify-content: end;
+
+}
+@media(max-width:975px){
+    .textHeader {
+       display: flex;
+       align-items: flex-end;
+       margin-top: -1.5rem;
+    }
+}
+.a-Header {
     margin-right: 5vw;
     line-height: 52px;
     text-decoration: none;
     font-family: 'Pacifico', cursive;
-    font-size: 1rem;
     color: #ffffff;
     padding-left: 15px;
     border-left: 3px solid white;
+    text-align: center;
 }
- 
-.a-Header:hover{
+
+.a-Header:hover {
     color: black;
 }
 
-.tituloArtPetit{
+.tituloArtPetit {
     font-family: 'Pacifico', cursive;
     font-size: 2.1rem;
     line-height: 63px;
     color: var(--colorSecundario);
-    margin-left: 4vw;
     margin-top: 5vh;
     margin-bottom: 5vh;
     text-decoration: none;
 }
-.tituloArtPetit:hover{
+
+.tituloArtPetit:hover {
     color: var(--colorSecundario);
 }
-
-.contenedorNavs{
+.contenedorNavs {
     font-family: var(--fuentePrincipal);
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
 }
 
-.nav-link{
-    color: black !important;
+@media (max-width:975px) {
+
+    .contenido {
+        position: relative;   
+    }
+
+    .contenedorNavs {
+        position: absolute;
+         top: 52px;
+        width: 12rem;
+        background-color: #FDB022;
+        left: -12rem;
+        transition: all 250ms linear;
+        z-index: 100;
+    }
+
+    .contenedorNavs.active {
+        left: 0rem;
+
+
+    }
+
+    .contenedorNavs ul li {
+        list-style: none;
+        color: #FFFFFF !important;
+        text-align: center;
+        margin: 2rem;
+
+    }
+
+
+    .sidebar {
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: #fff;
+        align-items: flex-start;
+    }
+
+    .textHeader {
+        margin-top: -3.5rem;
+
+    }
+
 }
 
-.nav-link:hover{
-    color: var(--colorPrincipal) !important;
+.nav-link {
+    color: #fff !important;
+    width: 100%;
+
 }
 
+.navPcContainer {
+    margin-bottom: 2.5%;
+}
+
+.navPc {
+    color: black;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Mina';
+    gap: 1.5rem;
+}
+
+.navPc:hover {
+    color: #FDB022;
+}
+
+.dropdownPc:hover{
+    background-color: #FEC84B!important;
+}
+
+.dropdown-menu.show {
+    background-color: #FEC84B;
+    font-family: 'Mina';
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.nav-link:active {
+    color: #C11574 !important;
+}
+
+@media (max-width: 975px) {
+    .pc {
+      display: none;
+    }
+  }
+  
+@media (min-width: 976px) {
+    .mobile {
+      display: none;
+    }
+  }
 /* FIN HEADER */
 
 
-/* HOME */
+/* HOME  y CARROUSEL */
+@media (min-width:768px) {
+    .carousel-caption h5 {
 
-.titulosCarrousel{
-    background-color: rgba(0, 0, 0, 0.541);
-    color: white;
-    font-family: var(--fuentePrincipal);
-    padding: 10px;
+        position: relative;
+        top: -387px;
+        font-family: 'Mina';
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+        padding: 1rem;
+        font-size: 2rem;
+        font-weight: bold;
+        display: block;
+    }
+    .titulosCarrousel__terImg h5{
+        position: relative;
+        top: -29.8rem;
+        left: -11rem;
+    }
+    .carousel-caption span {
+        position: relative;
+        top: -20.8rem;
+        left: -10rem;
+        color: #000;
+        font-family: 'Mina';
+        font-size: 2.7rem;
+        text-transform: uppercase;
+    
+    }
 }
 
-.contenedorInfo{
+
+@media (max-width:768px) {
+  
+    .carousel-caption h5  {
+        position: relative;
+        font-family: 'Mina';
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        display: block;
+        bottom: 6rem;
+    }
+    /* .titulosCarrousel span {
+      
+        font-size: 1.3rem;
+        right: 35px;
+        text-transform: uppercase;
+        bottom: 3rem;
+
+
+    } */
+    .carousel-item img {
+    padding: 1rem;
+    height: 20rem;
+    }
+
+    .titulosCarrousel__terImg {
+        bottom: 10rem !important;
+        right: 1.2rem !important;
+    }
+   
+    .carousel-caption span {
+        position: relative;
+        color: #000;
+        font-family: 'Mina';
+        text-transform: uppercase;
+        bottom: 6rem !important;
+        right: 20px !important;
+        font-size: 1.3rem !important;
+    }
+  
+}
+
+
+/* FIN contenido carrousel */
+.contenedorInfo {
     width: 100%;
 }
-.textoInformacion{
+
+.textoInformacion {
     font-family: var(--fuentePrincipal);
     font-size: 1rem;
     font-weight: 700;
 }
-.textoFAQS{
+
+.textoFAQS {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
     font-size: 1rem;
@@ -102,58 +289,325 @@ body{
 
 
 /* FOOTER */
-
-.footer{
-    background-color: var(--colorPrincipal);
-    height: 213px;
-    width: 100%;
-    font-size: 1rem;
-}
-.textoRedes{
-    font-family:var(--fuentePrincipal);
-    font-size: 1.5rem;
-    margin: 15px;
-}
-.textoUbicacion{
-    font-family: var(--fuentePrincipal);
-    font-size: 1.5rem;
+.contenedorLogoRedes {
+    padding: 25px;
+    text-align: center;
 }
 
-@media (max-width: 600px){
-    .textoUbicacion{
-        font-family: var(--fuentePrincipal);
+@media(max-width:768px) {
+
+    .contenidoFooterRedes,
+    .contenedorLogoRedes__iconos  {
+        display: flex;
+        justify-content: space-evenly;
+      padding: 2rem;
+    }
+   
+
+    .contenidoFooterRedes h5 {
+        font-family: 'Mina';
+        font-weight: bold;
         font-size: 1rem;
+        line-height: 1.2rem;
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+
+    .contenedorLogoRedes__iconos i{
+        font-size: 1.6rem;
+        background-color: var(--colorPrincipal);
+    }
+
+
+}
+
+@media (max-width:768px) {
+    .footer {
+        background-color: var(--colorPrincipal);
+        width: 100%;
+    }
+
+    .contenedorUbicacion {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 5rem;
+    }
+
+    .textoUbicacion {
+        font-family: 'Mina';
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    .textoUbicacion img {
+        width: 10px;
+
+
     }
 }
+
+@media (min-width:768px) {
+    .footer {
+        background-color: var(--colorPrincipal);
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .contenidoFooter {
+        font-family: var(--fuentePrincipal);
+        font-size: 1.5rem;
+        margin: 15px;
+    }
+
+    .textoUbicacion {
+        font-family: var(--fuentePrincipal);
+        font-size: 1.5rem;
+    }
+
+}
+
 
 
 /* FIN FOOTER */
 
-
-
-
-
-
 /* PAGINA COMPRAR ARTE */
+@media (min-width:768px) {
+    .producDatos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .producDescrip {
+        margin-top: 5rem;
+        font-family: 'Mina', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 150px;
+        margin-right: 9rem;
+    }
+    .btnComprar {
+        width: 10rem;
+        height: 3.5rem;
+        background: #FFFFFF;
+        border: 2px solid #C11574;
+        border-radius: 10px;
+        text-transform: uppercase;
+        color: var(--colorTerciario);
+        font-family: var(--fuentePrincipal);
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 5rem;
+    }
+    
+}
+@media (max-width:768px) {
+    
+    .producDatos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .producImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .producDescrip h5{
+        margin: 15px;
+    }
+    .producDescrip{
+        font-family: 'Mina', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+     
+    
+    }
+    .btnComprar {
+        width: 10rem;
+        height: 3.5rem;
+        background: #FFFFFF;
+        border: 2px solid #C11574;
+        border-radius: 10px;
+        text-transform: uppercase;
+        color: var(--colorTerciario);
+        font-family: var(--fuentePrincipal);
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 2.5rem;
+    }
+        
+}
 
-.card-body{
+.card-body {
     font-family: 'Mina', sans-serif;
 }
 
+/* media query para la version mobile de comprar luces o dibujos */
+@media (max-width:975px) {
 
+
+/* media query para la version mobile de comprar luces o dibujos */
+@media (max-width:768px) {
+    .tituloArtPetit {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    .contenedorImg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin-top: -2rem;
+       padding: 15px;
+
+    }
+
+    .floatWpp {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: .3rem;
+        top: 24rem;
+        margin-bottom: 2rem;
+        background-color: #00bb2d;
+        color: #ffffff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 2.5rem;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+
+    }
+
+    .floatWpp:hover {
+        text-decoration: none;
+        color: #00bb2d;
+        background-color: #ffffff;
+    }
+
+    .iconWpp i {
+        margin-top: -2rem;
+    }
+
+}
 
 
 /* PAGINA TRABAJOS PERSONALIZADOS */
 
-.contenedorFormulario{
-    background-color:var(--colorTerciario);
-    width: 75vw;
-    padding: 5vw;
-    border-radius: 30px;
+
+/* estilos que se muestra si el formulario se envio  */
+@media (max-width:975px) {
+    /* ajustar la pantalla  */
+
+    .headerTop {
+        justify-content: center;
+
+    }
+
+    .tituloArtPetit {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    .contenedorFormulario {
+        display: flex;
+        flex-direction: row;
+        margin: 1.5rem;
+        margin-bottom: 40px;
+        justify-content: center;
+        align-items: center;
+        background-color: #FDB022;
+        padding: 2rem;
+        border-radius: 10px;
+
+    }
+
+    .botonSubmit {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width:976px) {
+    .textHeader {
+        margin-left: 62%;
+        margin-top: 0.1rem;
+        display: flex;
+        font-size: 1.3rem;
+    }
+
+    .headerTop {
+        justify-content: center;
+        overflow: auto;
+    }
+
+    .tituloArtPetit {
+        text-align: left;
+        margin-left: 4vh;
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+
+    .contenedorFormulario {
+        margin: 0 auto;
+        width: 100%;
+        background-color: #FDB022;
+        border-radius: 2%;
+        padding: 1rem;
+        margin-bottom: 5rem;
+    }
+
+    .botonSubmit {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.FormularioEnviado {
+    text-align: center;
+}
+
+.FormularioEnviado h1 {
+    margin-top: 5rem;
+    font-family: 'Mina', sans-serif;
+    color: #000;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.FormularioEnviado i {
+    color: rgb(95, 182, 139);
+    font-size: 4rem;
+    font-weight: 100;
+    margin: 3.5rem;
+
+}
+
+.FormularioEnviado p {
+    font-family: 'Mina';
+    font-size: 1.2rem;
+    font-weight: 100;
+
+}
+
+@media (min-width:976px) {
+    .contenedorFormulario {
+        margin: 0 auto;
+        width: 80%;
+        background-color: var(--colorTerciario);
+        border-radius: 2%;
+        padding: 1rem;
+        margin-bottom: 5rem;
+    }
+
 }
 
 
-.textoLabel{
+.textoLabel {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
     font-size: 1.5rem;
@@ -161,21 +615,29 @@ body{
     margin-bottom: 8px;
 }
 
-.botonSubmit{
-padding: 2vh 8vw;
-width: 25vw;
-background: #FFFFFF;
-border: 3px solid #C11574;
-border-radius: 10px;
-text-transform: uppercase;
-color: var(--colorTerciario);
-font-family: var(--fuentePrincipal);
-font-weight: 700;
-font-size: 1.5rem;
+.botonSubmit {
+    padding: 2vh 8vw;
+    width: 25vw;
+    margin: 0 19rem;
+    background: #FFFFFF;
+    border: 3px solid #C11574;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: var(--colorTerciario);
+    font-family: var(--fuentePrincipal);
+    font-weight: 700;
+    font-size: 1.5rem;
+
 }
 
-@media (max-width: 600px){
-    .botonSubmit{
+.botonSubmit:hover {
+    background-color: #FDB022;
+    color: #ffffff;
+    transition-duration: .8s;
+}
+
+@media (max-width: 600px) {
+    .botonSubmit {
         padding: 7px 60px;
         width: 170px;
         margin: auto;
@@ -187,113 +649,435 @@ font-size: 1.5rem;
         font-family: "Mina", sans-serif;
         font-weight: 700;
         font-size: 1rem;
-        }
+    }
 }
- 
 
-.errorDatos{
-    border: 3.5px solid  rgb(252, 103, 103) !important;
+
+.errorDatos {
+    border: 3.5px solid rgb(252, 103, 103) !important;
 }
- .datosCorrectos {
-    border: 3.5px solid  rgb(146, 223, 95) !important;
+
+.datosCorrectos {
+    border: 3.5px solid rgb(146, 223, 95) !important;
     opacity: 1;
 }
+
 /* icono del fomulario */
-.formularioInput{
+.formularioInput {
     position: relative;
+
 }
-.formularioEstado , 
-.formularioEstadoEmail{
-position: absolute;
-right: 10px;
-top: 3px;
-z-index: 100;
-font-size: 20px;
-opacity: 0;
+
+.formularioEstado,
+.formularioEstadoEmail {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    z-index: 100;
+    font-size: 20px;
+    opacity: 0;
 }
-.formularioEstadoActivo{
+
+.formularioEstadoActivo {
     display: block;
     opacity: 1;
 }
-.formularioEstadoCorreto{
-    color:rgb(146, 223, 95) ;
+
+.formularioEstadoCorreto {
+    color: rgb(146, 223, 95);
 }
-.formularioEstadoIncorrecto{
+
+.formularioEstadoIncorrecto {
     color: rgb(216, 65, 38);
 }
-/* PAGINA QUIENES SOMOS */
 
-.contenedorQuienesSomos{
+/* estilos para que el boton cambie de color segun si el formulario esta bien o no  */
+.--incompleto {
+    background-color: #b1b0b0 !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.--incompleto:hover {
+    background-color: #FDB022 !important;
+    color: #fff !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
+}
+
+/* PAGINA QUIENES SOMOS */
+@media (max-width:975px) {
+
+    .quienesSomos {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+
+    }
+
+    .tituloQuienesSomos {
+        text-align: center;
+    }
+
+    .textoQuienesSomos {
+        font-family: 'Mina';
+        font-size: 15.5px;
+        margin: 1rem;
+        text-align: start;
+    }
+
+}
+
+@media (min-width:300px) {
+
+    .contenedorInfo {
+        
+        overflow: hidden;
+        border-top: 1px solid rgba(128, 128, 128, 0.616);
+
+
+    }
+
+    .Info {
+
+        display: flex;
+        justify-content: space-evenly;
+        gap: 25px;
+        position: relative;
+        top: 12px;
+        padding: 1rem;
+
+    }
+
+
+    .textoInformacion h5 {
+        font-size: 10px;
+        font-family: 'Mina';
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 4px;
+        top: 10px;
+
+    }
+
+    .textoInformacion img {
+        width: 10px;
+    }
+
+}
+
+/* preguntas Frecuentes */
+@media (min-width:300px) {
+    .preguntasFrecuentes {
+        font-family: var(--fuentePrincipal);
+        font-weight: 700;
+        color: #5C5959;
+        text-decoration: none;
+       
+
+    }
+    
+
+    .preguntasFrecuentes__Contenido {
+        display: flex;
+        justify-content: space-between;
+        font-family: var(--fuentePrincipal);
+        font-weight: 700;
+        color: #5C5959;
+        text-decoration: none;
+        border-top: 1px solid rgba(128, 128, 128, 0.616);
+       
+    }
+
+    .textoFAQS__contenido{
+        position: relative;
+        top: 1rem;
+        font-size: .8rem;
+        font-family: 'Mina';
+        text-align: center;
+        margin: .5rem;
+        height: 100%;
+
+    }
+
+
+}
+
+.contenedorQuienesSomos {
     display: flex;
     flex-direction: column;
     margin: 50px;
 }
 
-.tituloQuienesSomos{
+.tituloQuienesSomos {
     font-family: pacifico;
     color: var(--colorSecundario);
 }
 
-.textoQuienesSomos{
-    font-family:'Mina';
-    font-size: 1.8rem;
+.textoQuienesSomos {
+    font-family: 'Mina';
     font-weight: 400;
 }
 
 /* PAGINA LUCES: INTERIOR // EXTERIOR // OFERTAS */
 
-.titulosLuces{
+.titulosLuces {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
     color: var(--colorTerciario);
     margin-top: 5vh;
+    text-align: center;
 }
 
+/* media query para las luces */
+@media (max-width:975px) {
 
+    /* ajustar la pantalla  */
+    html, body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
 
+    .tituloArtPetit {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    .contendorLucesInterior {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin: 1rem;
+
+    }
+
+    .floatWpp {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: .3rem;
+        top: 24rem;
+        margin-bottom: 2rem;
+        background-color: #00bb2d;
+        color: #ffffff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 2.5rem;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+
+    }
+
+    .floatWpp:hover {
+        text-decoration: none;
+        color: #00bb2d;
+        background-color: #ffffff;
+    }
+
+    .iconWpp i {
+        margin-top: -2rem;
+    }
+
+}
+
+/* media query para luces de exterior */
+@media (max-width:975px) {
+
+    /* ajustar la pantalla  */
+    html, body{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+      }
+
+    .tituloArtPetit {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin: 1em;
+    }
+
+    .contenedorLucesExterior {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 1.5rem;
+
+    }
+
+    .floatWpp {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: .3rem;
+        top: 24rem;
+        margin-bottom: 2rem;
+        background-color: #00bb2d;
+        color: #ffffff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 2.5rem;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+
+    }
+
+    .floatWpp:hover {
+        text-decoration: none;
+        color: #00bb2d;
+        background-color: #ffffff;
+    }
+
+    .iconWpp i {
+        margin-top: -2rem;
+    }
+
+}
+
+@media (max-width:975px) {
+    .contenidoMain {
+        height: 50vh;
+    }
+
+    .contenidoMain__texto {
+        display: flex;
+        justify-content: center;
+        margin-top: 6rem;
+        color: #000;
+        font-family: 'Mina';
+        padding: 2rem;
+
+    }
+}
 
 /* PAGINA ¿COMO COMPRAR? */
 
 
-.contenedorComoComprar{
+/* dependiendo la resolucion de la pantalla muestro un diseño u otro  */
+@media (max-width:768px) {
+    .comoComprar__Movile{
+        display: block;
+        background: #F6D6E8;
+     padding-bottom:10px ;
+ 
+    } 
+    
+    .comoComprarTitulo__Movile{
+        text-align: start !important;
+        font-family: 'Mina';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 16px;
+        color: #3C3B3B !important;
+        text-transform: uppercase;
+        
+
+    }
+    .comoComprar__Contenido__Principal{
+        background: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin: 20px;
+        margin-bottom: 20px;
+    }
+    .comoComprar__img-1{
+        display: flex;
+    }
+    .comoComprar__img-2 img ,
+    .comoComprar__img-3 img{
+    width: 100%;
+    height: 11rem;
+    }
+    .card-body{
+        background-color: #fff;
+        color: #000;
+    
+    }
+    .ComoComprar__titulo-h5{
+        font-family: 'Mina';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 16px;
+        text-align: center;
+        margin: 10px;
+    }
+    .comoComprar__texto-p{
+        font-family: 'Mina';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 16px;
+        color: #FFFFFF;
+        margin: 20px;
+        
+    }
+    
+}
+@media (min-width:768px) {
+    .comoComprar__Movile{
+        display: none;
+    }
+}
+@media (min-width:768px) {
+    .comoComprar__Desktop{
+        display: block ; 
+    }
+    
+.contenedorComoComprar {
     background: #C1157433;
     height: 100%;
 }
 
-.cartasComoComprar{
-    background-color:var(--colorSecundario);
+.cartasComoComprar {
+    background-color: var(--colorSecundario);
     color: white;
     font-family: var(--fuentePrincipal);
 }
 
-.tituloComoComprar{
+.tituloComoComprar {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
     text-transform: uppercase;
     color: var(--colorSecundario);
 }
-
+}
+@media (max-width:768px) {
+    .comoComprar__Desktop{
+        display: none ; 
+    }
+}
 
 
 /* PAGINA PREGUNTAS FRECUENTES */
 
-.contenedorPreguntasFrecuentes{
+.contenedorPreguntasFrecuentes {
     margin: 60px;
 }
 
-.titPrincipalPreguntasFrecuentes{
+.titPrincipalPreguntasFrecuentes {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
     color: var(--colorSecundario);
     margin: 60px;
 }
 
-.titulosPreguntasFrecuentes{
+.titulosPreguntasFrecuentes {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
 }
 
-.textoPreguntasFrecuentes{
+.textoPreguntasFrecuentes {
     font-family: var(--fuentePrincipal);
     font-weight: 400;
 }
@@ -301,34 +1085,102 @@ opacity: 0;
 
 
 /* PAGINA IDEAS */
+@media (max-width:975px) {
+    .contenedorIdeas {
+        overflow-x: auto;
+        border: 1px solid white;
+        max-height: 300px;
+        display: flex;
+    }
 
-.contenedorIdeas{
-    display: flex;
-    overflow-x: auto;
-    border: 1px solid white;
-    max-height: 300px;
+    .contenedorIdeas::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    .imgIdeas {
+        max-width: 600px;
+        height: 300px;
+        margin-right: 20px;
+    }
+
+    .tituloIdeasBalcon {
+        font-family: var(--fuentePrincipal);
+        font-weight: 700;
+    }
 }
 
-.contenedorIdeas::-webkit-scrollbar{
-    width: 0;
-}
 
-.imgIdeas{
-    max-width: 600px;
-    height: 300px;
-    margin-right: 20px;
-}
-
-.tituloIdeasBalcon{
-    font-family: var(--fuentePrincipal);
-    font-weight: 700;
-}
-
-
-/* PAGINA TERMINOS Y CONDICIONES  */
-
-.tituloTerminosyCondiciones{
+.tituloTerminosyCondiciones {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
     color: var(--colorSecundario);
+}
+/* PAGINA TERMINOS Y CONDICIONES  */
+@media (max-width:975px) {
+    .tituloTerminosyCondiciones{
+        font-family: 'Mina';
+        font-weight: 700;
+        font-style: normal;
+        font-size: 14px;
+        color: var(--colorTerciario);
+    }
+    .terminosYCondiones__Texto{
+        font-family: 'Mina';
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12.7px;
+        text-align: start;
+        margin: 15px;   
+    }
+    
+}
+
+
+
+/* PAGINA DE NUESTRO BLOG */
+.subtituloBlog {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: var(--colorSecundario);
+}
+.contenidoBlog__Titulo{
+    color: #FEC84B;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.253) 0px 4px 4px;
+}
+    
+}
+
+/* pagina contactanos */
+@media (max-width:965px) {
+    .contenedorContactanos{
+      
+        text-align: center;
+        font-family: 'Mina';
+        background-color: #FEC84B;
+        margin-top: 8rem;
+        height: 80vh;
+    }
+    .contenedorLogoRedes__iconos__Contactanos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+     
+    }
+    .contenedorLogoRedes__iconos__Contactanos i{
+        font-size: 2.5rem;
+
+    }
+    .contenedorUbicacion__Contactanos{
+        display: flex;
+        justify-content: space-around;
+    }
+    .contenedorUbicacion__Contactanos img{
+        width: 2rem;
+    }
+  
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "img": "img/dibujo1.png",
+    "descripcion": "Tecnica : Mano alzada"
+  },
+  {
+    "id": 2,
+    "img": "img/dibujo2.png",
+    "descripcion": "Tecnica : acrilico sobre base de madera"
+  },
+  {
+    "id": 3,
+    "img": "img/dibujo3.png",
+    "descripcion": "Tecnica: pastel blanco sobre papel negro"
+  },
+  {
+    "id": 4,
+    "img": "img/dibujo4.png",
+    "descripcion": "Tecnica :lapiz, tinta china y acuarela.!"
+  },
+  {
+    "id": 5,
+    "img": "img/dibujo5.png",
+    "descripcion": "Tecnica :pastel de colores sobre papel negro."
+  },
+  {
+    "id": 6,
+    "img": "img/dibujo6.png",
+    "descripcion": "Tecnica:base en lapiz y acrilico."
+  }
+]
